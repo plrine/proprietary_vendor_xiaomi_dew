@@ -607,6 +607,7 @@ PRODUCT_PACKAGES += \
     libTEECommon \
     libimsg_log \
     libteei_daemon_vfs \
+    libmnl_mtk \
     arm.graphics-V5-ndk \
     arm.mali.platform-V2-ndk \
     com.fingerprints.extension.aidl_if-V1-ndk \
@@ -832,7 +833,6 @@ PRODUCT_PACKAGES += \
     libmisound \
     libmmprofile \
     libmnetlink_v104 \
-    libmnl \
     libmorpho_HdrChecker \
     libmpbase \
     libmsbc_mtk \
