@@ -794,7 +794,7 @@ PRODUCT_PACKAGES += \
     libfile_op \
     libflatmode \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libged \
     libgf_ca \
     libgf_hal \
