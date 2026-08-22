@@ -499,7 +499,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext-service.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/xiaomi/dew/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/xiaomi/dew/proprietary/vendor/etc/miLutInfo.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLutInfo.txt \
     vendor/xiaomi/dew/proprietary/vendor/etc/miLut_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_0.txt \
@@ -1095,7 +1094,6 @@ PRODUCT_PACKAGES += \
     rcs_volte_stack \
     teei_daemon \
     volte_clientapi_ua \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader
 
