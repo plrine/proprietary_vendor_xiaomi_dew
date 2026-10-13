@@ -3396,7 +3396,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libfmq",
                 "liblog",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V3-ndk",
                 "libhidlbase",
                 "libxml2",
                 "libflatbuffers-cpp",
@@ -12494,34 +12494,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "android.hardware.audio.common-V3-ndk",
                 "libc++",
                 "libc",
                 "libm",

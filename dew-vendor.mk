@@ -995,7 +995,6 @@ PRODUCT_PACKAGES += \
     sc820cs_truly_front_i_mipi_raw_xts_tuning \
     sensors.touch.detect \
     vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
     vendor.mediatek.hardware.camera.atms-V1-ndk \
     vendor.mediatek.hardware.camera.bgservice-V1-ndk \
     vendor.mediatek.hardware.camera.ccap@1.0 \
