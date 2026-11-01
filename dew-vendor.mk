@@ -1053,7 +1053,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-V3-ndk \
     vendor.mediatek.hardware.pq_aidl-V4-ndk \
     vendor.mediatek.hardware.pq_aidl-V7-ndk \
-    vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     com.google.android.widevine.nonupdatable \
     CommandService.xml \
