@@ -97,6 +97,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libteei_daemon_vfs.so",
             ],
             shared_libs: [
+                "liblog",
                 "libcutils",
                 "libc",
                 "libm",
