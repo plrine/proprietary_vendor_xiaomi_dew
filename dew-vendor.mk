@@ -606,7 +606,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/thh/ta/isee_model.json:$(TARGET_COPY_OUT_VENDOR)/thh/ta/isee_model.json
 
 PRODUCT_PACKAGES += \
-    mapper.mediatek \
     libTEECommon \
     libimsg_log \
     libteei_daemon_vfs \
@@ -637,6 +636,7 @@ PRODUCT_PACKAGES += \
     hwcomposer.mt6768 \
     id_attestation.beanpod \
     kmsetkey.beanpod \
+    mapper.mediatek \
     sensors.dynamic_sensor_hal \
     sensors.mt6768 \
     vendor.mediatek.hardware.camera.atms_aidl@1.0-impl \
