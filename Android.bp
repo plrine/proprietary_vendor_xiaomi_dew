@@ -537,7 +537,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libaudioutils",
                 "libtinyalsa",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libaudiotoolkit_vendor",
                 "libmedia_helper",
                 "libladder",
@@ -616,7 +616,7 @@ cc_prebuilt_library_shared {
                 "libhidltransport",
                 "libhidlbase",
                 "android.frameworks.sensorservice@1.0",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libhardware",
                 "android.hardware.graphics.allocator@2.0",
                 "android.hardware.graphics.allocator@3.0",
@@ -821,7 +821,7 @@ cc_prebuilt_library_shared {
                 "libpqhdrmetaparser",
                 "libmml",
                 "libdmabufheap",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.composer3-V3-ndk",
                 "libsilkybrightnesscore",
                 "libbinder_ndk",
@@ -1265,7 +1265,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libpq_sec",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "vendor.mediatek.hardware.pq_aidl-V7-ndk",
                 "libcomposer_ext",
                 "libui",
@@ -7217,56 +7217,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdmabufheap",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdmabufheap.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtinyxml2",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtinyxml2.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmnl_mtk",
     owner: "xiaomi",
     strip: {
@@ -10617,7 +10567,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libc++",
                 "libc",
                 "libm",
@@ -10830,7 +10780,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libtinyalsa",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "liblog",
                 "libnvram",
                 "libcrypto",
@@ -10986,7 +10936,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libhardware",
                 "libhardware_legacy",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libpqxmlparser",
                 "libc++",
                 "libc",

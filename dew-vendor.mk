@@ -632,8 +632,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.mt6768 \
     id_attestation.beanpod \
     kmsetkey.beanpod \
-    libdmabufheap \
-    libtinyxml2 \
     mapper.mediatek \
     sensors.dynamic_sensor_hal \
     sensors.mt6768 \
