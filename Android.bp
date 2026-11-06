@@ -8593,7 +8593,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libmtkcam_ulog",
                 "libbinder_ndk",
-                "android.hardware.camera.common-V2-ndk",
+                "android.hardware.camera.common-V1-ndk",
                 "android.hardware.camera.device-V3-ndk",
                 "libcamera_metadata",
                 "libc++",
