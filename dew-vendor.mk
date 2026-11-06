@@ -961,6 +961,7 @@ PRODUCT_PACKAGES += \
     libthha \
     libtrm \
     libtruetone \
+    libudf \
     libvcodec_oal \
     libvcodecdrv_header_stub \
     libvia-ril \
