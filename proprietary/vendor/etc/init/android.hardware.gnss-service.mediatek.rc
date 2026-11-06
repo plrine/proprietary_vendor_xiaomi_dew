@@ -1,4 +1,6 @@
 service vendor.gnss-default /vendor/bin/hw/android.hardware.gnss-service.mediatek
+    interface aidl android.hardware.gnss.IGnss/default
+    interface aidl vendor.mediatek.hardware.gnss.IMtkGnss/default
     class hal
     user system
     capabilities WAKE_ALARM

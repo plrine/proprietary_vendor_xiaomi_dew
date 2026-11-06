@@ -514,6 +514,43 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.sensors@2.X-subhal-mediatek",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so",
+            ],
+            shared_libs: [
+                "android.hardware.sensors@1.0",
+                "android.hardware.sensors@2.0",
+                "android.hardware.sensors@2.0-ScopedWakelock",
+                "android.hardware.sensors@2.1",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libfmq",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libpower",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "audio.primary.mt6768",
     owner: "xiaomi",
     strip: {
@@ -8540,6 +8577,144 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmtkcam_hal_aidl_common",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_hal_aidl_common.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libbinder_ndk",
+                "android.hardware.camera.common-V2-ndk",
+                "android.hardware.camera.device-V3-ndk",
+                "libcamera_metadata",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_hal_aidl_device",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_hal_aidl_device.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libbinder_ndk",
+                "android.hardware.camera.device-V3-ndk",
+                "libfmq",
+                "libmtkcam_hal_aidl_common",
+                "libmtkcam_debugutils",
+                "libcamera_metadata",
+                "libmtkcam_hal_aidl_utils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_hal_aidl_provider",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_hal_aidl_provider.so",
+            ],
+            shared_libs: [
+                "android.hardware.camera.provider@2.4",
+                "android.hardware.camera.provider@2.5",
+                "android.hardware.camera.provider@2.6",
+                "android.hardware.camera.device@3.6",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libbinder_ndk",
+                "android.hardware.camera.provider-V3-ndk",
+                "libcamera_metadata",
+                "android.hardware.camera.provider@2.6-impl-mediatek",
+                "libmtkcam_hal_aidl_common",
+                "libmtkcam_hal_aidl_device",
+                "libmtkcam_stdutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_hal_aidl_utils",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_hal_aidl_utils.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam_ulog",
+                "android.hardware.camera.device-V3-ndk",
+                "libmtkcam_hal_aidl_common",
+                "libmtkcam_stdutils",
+                "libmtkcam_grallocutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmtkcam_hwnode",
     owner: "xiaomi",
     strip: {
@@ -14058,6 +14233,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.fingerprintextension-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.xiaomi.hardware.fx.tunnel-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -14437,12 +14637,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.media.c2-mediatek-64b",
+    name: "android.hardware.media.c2-mediatek",
     owner: "xiaomi",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.media.c2-mediatek-64b",
+                "proprietary/vendor/bin/hw/android.hardware.media.c2-mediatek",
             ],
             shared_libs: [
                 "server_configurable_flags",
@@ -14497,6 +14697,60 @@ cc_prebuilt_binary {
     },
     compile_multilib: "64",
     check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "camerahalserver",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/camerahalserver",
+            ],
+            shared_libs: [
+                "libudf",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libbinder_ndk",
+                "libhwbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "libmtkcam_stdutils",
+                "libmtkcam_ulog",
+                "libmtkcam_scenariorecorder",
+                "libmtkcam_modulehelper",
+                "android.hardware.camera.provider@2.4",
+                "android.hardware.camera.provider@2.5",
+                "android.hardware.camera.provider@2.6",
+                "vendor.mediatek.hardware.camera.frhandler@1.0",
+                "vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl",
+                "vendor.mediatek.hardware.camera.isphal-V1-ndk",
+                "vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl",
+                "vendor.mediatek.hardware.camera.bgservice-V1-ndk",
+                "vendor.mediatek.hardware.camera.postproc_aidl@1.0-impl",
+                "vendor.mediatek.hardware.camera.postproc-V1-ndk",
+                "libhardware",
+                "libmtkcam_grallocutils",
+                "vendor.mediatek.hardware.camera.atms_aidl@1.0-impl",
+                "vendor.mediatek.hardware.camera.atms-V1-ndk",
+                "libmtkcam_hal_aidl_provider",
+                "android.hardware.camera.provider-V3-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     strip: {
         none: true,
     },

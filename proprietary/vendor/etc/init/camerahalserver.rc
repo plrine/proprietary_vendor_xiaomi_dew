@@ -1,0 +1,12 @@
+service camerahalserver /vendor/bin/hw/camerahalserver
+    interface aidl android.hardware.camera.provider.ICameraProvider/internal/0
+    interface aidl vendor.mediatek.hardware.camera.atms.IATMs/default
+    interface aidl vendor.mediatek.hardware.camera.bgservice.IBGService/default
+    interface aidl vendor.mediatek.hardware.camera.isphal.IISPModule/internal/1
+    interface aidl vendor.mediatek.hardware.camera.postproc.IPostDevice/default
+    class main
+    user cameraserver
+    group audio camera input drmrpc sdcard_rw system media graphics
+    ioprio rt 4
+    capabilities SYS_NICE
+    task_profiles CameraServiceCapacity MaxPerformance

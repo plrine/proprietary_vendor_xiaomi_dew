@@ -3,6 +3,23 @@ on post-fs-data
     mkdir /data/vendor/radio 0771 radio radio
 
 service vendor.ril-daemon-mtk /vendor/bin/hw/mtkfusionrild -l libmtk-ril.so
+    interface aidl android.hardware.radio.config.IRadioConfig/default
+    interface aidl android.hardware.radio.data.IRadioData/slot1
+    interface aidl android.hardware.radio.data.IRadioData/slot2
+    interface aidl android.hardware.radio.ims.IRadioIms/slot1
+    interface aidl android.hardware.radio.ims.IRadioIms/slot2
+    interface aidl android.hardware.radio.messaging.IRadioMessaging/slot1
+    interface aidl android.hardware.radio.messaging.IRadioMessaging/slot2
+    interface aidl android.hardware.radio.modem.IRadioModem/slot1
+    interface aidl android.hardware.radio.modem.IRadioModem/slot2
+    interface aidl android.hardware.radio.network.IRadioNetwork/slot1
+    interface aidl android.hardware.radio.network.IRadioNetwork/slot2
+    interface aidl android.hardware.radio.sap.ISap/slot1
+    interface aidl android.hardware.radio.sap.ISap/slot2
+    interface aidl android.hardware.radio.sim.IRadioSim/slot1
+    interface aidl android.hardware.radio.sim.IRadioSim/slot2
+    interface aidl android.hardware.radio.voice.IRadioVoice/slot1
+    interface aidl android.hardware.radio.voice.IRadioVoice/slot2
     class main
     socket rild-oem stream 660 radio system
     socket volte_imsvt1 stream 660 root radio
@@ -10,8 +27,6 @@ service vendor.ril-daemon-mtk /vendor/bin/hw/mtkfusionrild -l libmtk-ril.so
     user radio
     group radio net_admin net_raw cache inet misc audio log readproc wakelock sdcard_r sdcard_rw system
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW WAKE_ALARM
-    oneshot
-    disabled
 
 on property:vendor.ril.mtk=1
     start vendor.ril-daemon-mtk
