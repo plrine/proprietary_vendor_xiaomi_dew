@@ -13,6 +13,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
     vendor/xiaomi/dew/proprietary/vendor/etc/.tp/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
     vendor/xiaomi/dew/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
+    vendor/xiaomi/dew/proprietary/vendor/etc/battery_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/battery_info.xml \
     vendor/xiaomi/dew/proprietary/vendor/etc/VideoLog_dynamic.ds:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.ds \
     vendor/xiaomi/dew/proprietary/vendor/etc/apdb/APDB_MT6768_S01__W2442:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6768_S01__W2442 \
     vendor/xiaomi/dew/proprietary/vendor/etc/apdb/APDB_MT6768_S01__W2442_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6768_S01__W2442_ENUM \
@@ -484,11 +485,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/display.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/display.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/gpuserv-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuserv-default.rc \
+    vendor/xiaomi/dew/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
+    vendor/xiaomi/dew/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
+    vendor/xiaomi/dew/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
@@ -1103,7 +1107,9 @@ PRODUCT_PACKAGES += \
     teei_daemon \
     volte_clientapi_ua \
     wmt_launcher \
-    wmt_loader
+    wmt_loader \
+    batterysecret \
+    gsm0710muxd
 
 PRODUCT_PACKAGES += \
     vendor_lib64_libdpframework_so \

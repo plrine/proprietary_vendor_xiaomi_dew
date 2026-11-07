@@ -15388,3 +15388,67 @@ install_symlink {
     installed_location: "lib64/libpqparamparser.so",
     symlink_target: "/vendor/lib64/mt6768/libpqparamparser.so",
 }
+
+cc_prebuilt_binary {
+    name: "batterysecret",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/batterysecret",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libbinder",
+                "libbase",
+                "liblog",
+                "libhidlbase",
+                "libhidltransport",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "gsm0710muxd",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/gsm0710muxd",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libmtkcutils",
+                "libmtkrillog",
+                "libmtkproperty",
+                "libaedv",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+
