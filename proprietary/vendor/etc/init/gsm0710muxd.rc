@@ -20,6 +20,4 @@ on property:vendor.mtk.md1.status=flightmode
 on property:vendor.mtk.md1.status=exception
     stop vendor.gsm0710muxd
 
-on property:vendor.ril.mtk=1
-    restart vendor.ril-daemon-mtk
 
