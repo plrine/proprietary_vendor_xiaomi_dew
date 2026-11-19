@@ -625,6 +625,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.graphics.allocator-V2-mediatek \
+    android.hardware.sensors@2.X-subhal-mediatek \
     audio.primary.mt6768 \
     audio.r_submix.mt6768 \
     displayfeature.default \
