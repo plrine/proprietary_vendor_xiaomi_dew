@@ -14419,6 +14419,33 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "android.hardware.security.keymint-service.beanpod.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.beanpod.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.security.secureclock-service.beanpod.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.beanpod.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.security.sharedsecret-service.beanpod.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.beanpod.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "android.hardware.tetheroffload-V1-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml",
@@ -14832,6 +14859,26 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.security.keymint@3.0-service.beanpod",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.security.keymint@3.0-service.beanpod",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
     strip: {
         none: true,
     },

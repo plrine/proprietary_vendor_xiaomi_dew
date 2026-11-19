@@ -480,6 +480,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.3-service.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
+    vendor/xiaomi/dew/proprietary/vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.beanpod.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/display.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/display.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/gpuserv-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuserv-default.rc \
@@ -529,6 +530,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/etc/miLut_7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_7.txt \
     vendor/xiaomi/dew/proprietary/vendor/etc/miLut_8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_8.txt \
     vendor/xiaomi/dew/proprietary/vendor/etc/miLut_9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_9.txt \
+    vendor/xiaomi/dew/proprietary/vendor/etc/permissions/android.hardware.keystore.app_attest_key.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.prebuilt.xml \
     vendor/xiaomi/dew/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/xiaomi/dew/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
     vendor/xiaomi/dew/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
@@ -1072,6 +1074,9 @@ PRODUCT_PACKAGES += \
     com.google.android.widevine.nonupdatable \
     CommandService.xml \
     android.hardware.gatekeeper-service.beanpod.xml \
+    android.hardware.security.keymint-service.beanpod.xml \
+    android.hardware.security.secureclock-service.beanpod.xml \
+    android.hardware.security.sharedsecret-service.beanpod.xml \
     android.hardware.tetheroffload-V1-service.xml \
     gnss-mtk-default.xml \
     gnss-mtk.xml \
@@ -1090,6 +1095,7 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2-mediatek-64b \
     android.hardware.nqnfc-service.nxp \
     android.hardware.secure_element@1.2-service-mediatek \
+    android.hardware.security.keymint@3.0-service.beanpod \
     mtkfusionrild \
     tetheroffloadservice \
     vendor.mediatek.hardware.gpuserv-service \
