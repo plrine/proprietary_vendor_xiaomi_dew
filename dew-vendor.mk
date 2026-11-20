@@ -129,6 +129,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
     vendor/xiaomi/dew/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/xiaomi/dew/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
+    vendor/xiaomi/dew/proprietary/vendor/etc/battery_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/battery_info.xml \
     vendor/xiaomi/dew/proprietary/vendor/etc/camera/anc_night_algo_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_algo_cache \
     vendor/xiaomi/dew/proprietary/vendor/etc/camera/anc_night_binary_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_binary_cache \
     vendor/xiaomi/dew/proprietary/vendor/etc/camera/anc_night_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_model \
@@ -483,6 +484,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.beanpod.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/display.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/display.rc \
+    vendor/xiaomi/dew/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
+    vendor/xiaomi/dew/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/gpuserv-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuserv-default.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.SN220.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.SN220.nfc.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
@@ -800,6 +803,7 @@ PRODUCT_PACKAGES += \
     libfeature_lmv \
     libfeature_rss \
     libfeatureiodrv_mem \
+    libfgauge_gm30 \
     libfile_op \
     libflatmode \
     libforkexecwrap \
@@ -1028,7 +1032,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmagent-V1-ndk \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
@@ -1085,9 +1088,12 @@ PRODUCT_PACKAGES += \
     manifest_media_c2_default.xml \
     mapper.mediatek.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
+    batterysecret \
     ccci_mdinit \
     ccci_rpcd \
     displayfeature \
+    fuelgauged \
+    fuelgauged_nvram \
     android.hardware.gatekeeper-service.beanpod \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator-V2-service-mediatek \
