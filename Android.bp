@@ -393,6 +393,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "ese_spi_nxp",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/ese_spi_nxp.so",
+            ],
+            shared_libs: [
+                "android.hardware.nfc@1.0",
+                "android.hardware.nfc@1.1",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libbase",
+                "vendor.nxp.nxpese@1.0",
+                "vendor.nxp.nxpnfc@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "gc08a8_cxt_front_iii_mipi_raw_IdxMgr",
     owner: "xiaomi",
     strip: {
@@ -12076,6 +12110,76 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "nfc_nci.nqx.default.hw",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/nfc_nci.nqx.default.hw.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "libhardware_legacy",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
+                "vendor.nxp.nxpese@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "nfc_nci_nxp",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/nfc_nci_nxp.so",
+            ],
+            shared_libs: [
+                "android.hardware.nfc@1.0",
+                "android.hardware.nfc@1.1",
+                "android.hardware.nfc@1.2",
+                "android.hardware.secure_element@1.0",
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "libhardware_legacy",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "ese_spi_nxp",
+                "vendor.nxp.nxpese@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "ov08f_ofilm_front_ii_mipi_raw_IdxMgr",
     owner: "xiaomi",
     strip: {
@@ -14211,6 +14315,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.nxp.hardware.nfc@2.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.nxp.hardware.nfc@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk",
     owner: "xiaomi",
     strip: {
@@ -14620,6 +14752,78 @@ cc_prebuilt_binary {
                 "libcodec2_mtk_vdec",
                 "libcodec2_mtk_venc",
                 "android.hardware.media.c2-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.nqnfc-service.nxp",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.nqnfc-service.nxp",
+            ],
+            shared_libs: [
+                "nfc_nci.nqx.default.hw",
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libhidlbase",
+                "libbinder_ndk",
+                "android.hardware.nfc-V1-ndk",
+                "android.hardware.nfc@1.2",
+                "libhardware",
+                "vendor.nxp.hardware.nfc@2.0",
+                "vendor.nxp.nxpnfc_aidl-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.secure_element@1.2-service-mediatek",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek",
+            ],
+            shared_libs: [
+                "libbase",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libbinder_ndk",
+                "android.hardware.secure_element-V1-ndk",
+                "android.hardware.radio.sim-V3-ndk",
+                "android.hardware.radio.modem-V3-ndk",
+                "vendor.mediatek.hardware.mtkradioex.sim-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.se-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",

@@ -1,0 +1,17 @@
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nqnfc-service.nxp
+    class hal
+    user nfc
+    group nfc oem_2912
+    disabled
+
+on boot && property:ro.boot.product.hardware.sku=p15apg
+    start vendor.nfc_hal_service
+
+on boot && property:ro.boot.product.hardware.sku=p15ape
+    start vendor.nfc_hal_service
+
+on boot && property:ro.boot.product.hardware.sku=p15ae
+    start vendor.nfc_hal_service
+
+on boot && property:ro.boot.product.hardware.sku=p15aer
+    start vendor.nfc_hal_service
