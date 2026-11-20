@@ -483,6 +483,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.beanpod.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
+    vendor/xiaomi/dew/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/display.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/display.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
@@ -882,6 +883,10 @@ PRODUCT_PACKAGES += \
     libmtkcam_featureutils \
     libmtkcam_fwkutils \
     libmtkcam_grallocutils \
+    libmtkcam_hal_aidl_common \
+    libmtkcam_hal_aidl_device \
+    libmtkcam_hal_aidl_provider \
+    libmtkcam_hal_aidl_utils \
     libmtkcam_hwnode \
     libmtkcam_hwutils \
     libmtkcam_imem \
@@ -968,6 +973,7 @@ PRODUCT_PACKAGES += \
     libthha \
     libtrm \
     libtruetone \
+    libudf \
     libvcodec_oal \
     libvcodecdrv_header_stub \
     libvia-ril \
@@ -1099,6 +1105,7 @@ PRODUCT_PACKAGES += \
     android.hardware.nqnfc-service.nxp \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.beanpod \
+    camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
     vendor.mediatek.hardware.gpuserv-service \
