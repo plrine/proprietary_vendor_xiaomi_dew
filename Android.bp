@@ -14744,6 +14744,35 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "gsm0710muxd",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/gsm0710muxd",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libmtkcutils",
+                "libmtkrillog",
+                "libmtkproperty",
+                "libaedv",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "android.hardware.gatekeeper-service.beanpod",
     owner: "xiaomi",
     target: {

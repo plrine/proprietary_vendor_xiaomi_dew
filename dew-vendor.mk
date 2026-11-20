@@ -488,6 +488,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/gpuserv-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuserv-default.rc \
+    vendor/xiaomi/dew/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.SN220.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.SN220.nfc.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
@@ -1096,6 +1097,7 @@ PRODUCT_PACKAGES += \
     displayfeature \
     fuelgauged \
     fuelgauged_nvram \
+    gsm0710muxd \
     android.hardware.gatekeeper-service.beanpod \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator-V2-service-mediatek \
