@@ -493,11 +493,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
+    vendor/xiaomi/dew/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
-    vendor/xiaomi/dew/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/nqnfc-service-nxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nqnfc-service-nxp.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms-service.rc \
@@ -506,7 +506,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext-service.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/xiaomi/dew/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/dew/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
     vendor/xiaomi/dew/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/dew/proprietary/vendor/etc/libnfc-nxp_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_default.conf \
@@ -1051,7 +1050,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.voice-V1-ndk \
     vendor.mediatek.hardware.netdagent-V1-ndk \
-    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.nvram-V1-ndk \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
@@ -1115,12 +1113,10 @@ PRODUCT_PACKAGES += \
     mnld \
     mtk_agpsd \
     muxreport \
-    netdagent \
     nvram_daemon \
     rcs_volte_stack \
     teei_daemon \
     volte_clientapi_ua \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader
 
