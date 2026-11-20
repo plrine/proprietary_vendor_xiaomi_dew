@@ -614,9 +614,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dew/proprietary/vendor/thh/ta/isee_model.json:$(TARGET_COPY_OUT_VENDOR)/thh/ta/isee_model.json
 
 PRODUCT_PACKAGES += \
-    libTEECommon \
-    libimsg_log \
-    libteei_daemon_vfs \
     arm.graphics-V5-ndk \
     arm.mali.platform-V2-ndk \
     com.fingerprints.extension.aidl_if-V1-ndk \
@@ -694,6 +691,7 @@ PRODUCT_PACKAGES += \
     libSonyIMX386PdafLibraryWrapper \
     libSonyIMX519PdafLibrary \
     libSonyIMX519PdafLibraryWrapper \
+    libTEECommon \
     libTrueSight \
     lib_bsscore \
     lib_iir \
@@ -823,6 +821,7 @@ PRODUCT_PACKAGES += \
     libimageio \
     libimageio_plat_drv \
     libimageio_plat_pipe \
+    libimsg_log \
     libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
@@ -962,6 +961,7 @@ PRODUCT_PACKAGES += \
     libstereoinfoaccessor_vsdof \
     libstorage_otp \
     libsysenv \
+    libteei_daemon_vfs \
     libthha \
     libtrm \
     libtruetone \
